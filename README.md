@@ -1,4 +1,5 @@
 Self-supervised clustering algorithm based on hierarchy of local density clusters and constraint propagation (Self-HLCP)
+
 Abstract
     Clustering with a graph-cut scheme based on a weighted similarity graph has been an important research direction in the past years. Existing techniques for constructing a similarity graph usually focus more on local similarity while neglecting
 the global structural information, resulting in poor performance on complex data. Self-supervised clustering has emerged to mitigate the lack of supervised information to improve graph-cut clustering, and it typically incorporates structural
