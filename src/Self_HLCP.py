@@ -1,4 +1,3 @@
-# 调用第三方库
 import os
 import math
 import scipy
@@ -203,7 +202,6 @@ def Self_HLCP(x, cluster_num, k, norm=True, filter_nois=False, nois_den=0.2, r=1
         y_last[rho > nois_den] = result
         return y_last
 
-    # 计算各指标
     if 1:
         G = nx.Graph()
         for i in t:
@@ -236,7 +234,6 @@ def Self_HLCP(x, cluster_num, k, norm=True, filter_nois=False, nois_den=0.2, r=1
                         G.add_edge(t[t_i], t[t_j], snn=len(intersection), dist=np.linalg.norm(
                             x[t[t_i]] - x[t[t_j]], 2), sum_rho=sum_rho)
 
-        # 计算mar
         mar = np.zeros([len(t), len(t)])
         for index_i, i in enumerate(t):
             for index_j, j in enumerate(t):
@@ -304,4 +301,5 @@ def Self_HLCP(x, cluster_num, k, norm=True, filter_nois=False, nois_den=0.2, r=1
     label = E2CP(x, cluster_num, k, lam, must_link, cannot_link, alpha=0.6, beta=0.0)
 
     return label
+
 
