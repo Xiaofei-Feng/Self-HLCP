@@ -1,12 +1,9 @@
 
-from sklearn.preprocessing import StandardScaler,MinMaxScaler
+from sklearn.preprocessing import StandardScaler
 from src.evaluation import compute_score
 from src.Self_HLCP import Self_HLCP
 import scipy.io as scio
-import scipy
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 
 
 if __name__ == '__main__':
