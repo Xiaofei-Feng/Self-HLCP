@@ -1,11 +1,9 @@
 import os
-import math
 import scipy
 from scipy.io import savemat
 from sklearn.neighbors import NearestNeighbors
 from sklearn.cluster import KMeans
 import networkx as nx
-import matplotlib.pyplot as plt
 from scipy.cluster.hierarchy import dendrogram, linkage
 from scipy.sparse import csr_matrix
 from scipy.spatial.distance import squareform
@@ -301,5 +299,6 @@ def Self_HLCP(x, cluster_num, k, norm=True, filter_nois=False, nois_den=0.2, r=1
     label = E2CP(x, cluster_num, k, lam, must_link, cannot_link, alpha=0.6, beta=0.0)
 
     return label
+
 
 
