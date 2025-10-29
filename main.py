@@ -17,6 +17,6 @@ if __name__ == '__main__':
     cluster_num = len(np.unique(y))
     n, d = x.shape
 
-    labelnew = Self_HLCP(x, cluster_num, k=10, r=0.8, lam=1)
+    labelnew = Self_HLCP(x, cluster_num, k=22, r=0.8, lam=0.7)
     ari, nmi, acc = compute_score(labelnew, y)
     print(f"ARI={ari:.2f}, NMI={nmi:.2f}, ACC={acc:.2f}")
